@@ -79,7 +79,7 @@ function Photo({ index, height = "400px", caption } : { index: number; height?: 
   );
 }
 
-function TextBlock({ label, children }) {
+function TextBlock({ label, children } : { label?: string; children: React.ReactNode }) {
   return (
     <section style={{ maxWidth: "700px", margin: "0 auto", padding: "72px 32px 60px" }}>
       {label && (
@@ -97,7 +97,7 @@ function TextBlock({ label, children }) {
   );
 }
 
-function Body({ children }) {
+function Body({ children } : { children: React.ReactNode }) {
   return (
     <p style={{
       fontFamily: "'EB Garamond', serif",
