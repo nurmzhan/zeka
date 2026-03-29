@@ -22,7 +22,7 @@ const photoSources = [
   "/image15.jpg", // PHOTO 15
 ];
 
-function Photo({ index, height = "400px", caption }) {
+function Photo({ index, height = "400px", caption } : { index: number; height?: string; caption?: string }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
   const src = photoSources[index];
